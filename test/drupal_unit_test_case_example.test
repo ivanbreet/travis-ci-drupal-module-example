@@ -7,6 +7,10 @@ class TravisDrupalModuleExampleDrupalUnitTestCase extends DrupalUnitTestCase {
     );
   }
 
+  public function setUp() {
+    parent::setUp('travis_ci_drupal_module_example');
+  }
+
   public function testAssertTrue() {
     $result = myTest();
     $this->assertEquals('not working', $result, 'Should return correct message!');
