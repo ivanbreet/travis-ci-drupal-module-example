@@ -12,7 +12,7 @@ class TravisDrupalModuleExampleDrupalUnitTestCase extends DrupalUnitTestCase {
   }
 
   public function testAssertTrue() {
-    $result = 'test';
+    $result = myTest();
     $this->assertEqual('not working', $result, 'Should return correct message!');
   }
 }
