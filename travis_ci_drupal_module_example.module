@@ -1,1 +1,5 @@
 <?php
+
+function myTest() {
+  return 'This works!';
+}
